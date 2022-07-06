@@ -1,0 +1,35 @@
+main {
+  /* border: 2px solid lime; */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 8.3rem;
+  align-items: center;
+}
+
+.title-container {
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+.form {
+  /* border: 2px solid blue; */
+}
+
+.arrows {
+  width: 5rem;
+}
+
+h1 {
+  color: #19ef88;
+  line-height: 64%;
+  font-size: 4.3rem;
+  font-weight: 800;
+}
+
+.description {
+  color: #fff;
+  font-weight: 300;
+  line-height: 100%;
+  font-size: 1.75rem;
+}
