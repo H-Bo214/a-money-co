@@ -12,10 +12,6 @@ main {
   text-align: center;
 }
 
-.form {
-  /* border: 2px solid blue; */
-}
-
 .arrows {
   width: 5rem;
 }
@@ -32,4 +28,9 @@ h1 {
   font-weight: 300;
   line-height: 100%;
   font-size: 1.75rem;
+}
+
+.inputs-form {
+  border: 2px solid red;
+  display: flex;
 }
