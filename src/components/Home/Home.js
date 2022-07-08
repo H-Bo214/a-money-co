@@ -1,32 +1,25 @@
 import './Home.css'
 import options from '../../options'
-
 import Input from '../Input/Input'
 import { useEffect, useState } from 'react'
-import { fetchConversion } from '../../apiCalls'
+import { fetchConversion, fakeAPICall } from '../../apiCalls'
 
 const Home = () => {
   const [baseCurrency, setBaseCurrency] = useState('USD')
   const [convertCurrency, setConvertCurrency] = useState('')
   const [amount, setAmount] = useState(null)
 
-  // useEffect(() => {
-  //   console.log('rendered')
-  // }, [baseCurrency, convertCurrency, amount])
-
   const onSubmit = async (e) => {
     e.preventDefault()
     if (baseCurrency === convertCurrency) return
     if (convertCurrency === '') return
     if (amount === null) return
-    console.log('base', baseCurrency)
-    console.log('convert', convertCurrency)
-    console.log('fetchConversion', fetchConversion)
-    const data = await fetchConversion(baseCurrency, convertCurrency, amount)
-    console.log('data', data)
-    setAmount(null)
-    setBaseCurrency('')
-    setConvertCurrency('')
+    // const data = await fetchConversion(baseCurrency, convertCurrency, amount)
+    const fakeData = fakeAPICall()
+    console.log('fakeData', fakeData)
+    setAmount('')
+    setBaseCurrency('USD')
+    setConvertCurrency(null)
   }
 
   const handleBaseSelection = (e) => {
@@ -46,36 +39,42 @@ const Home = () => {
     console.log('value of input', value)
     setAmount(value)
   }
-
+  console.log('rendered')
   console.log('base', baseCurrency)
   console.log('convert', convertCurrency)
   console.log('amount', amount)
+
   return (
-    <main>
+    <main className='main-container'>
       <section className='title-container'>
         <h1>Currency Converter</h1>
         <p className='description'>
           Real-time exchange rates for 170 world currencies
         </p>
       </section>
-      <form className='inputs-form' onSubmit={onSubmit}>
-        <Input
-          options={options}
-          handleBaseSelection={handleBaseSelection}
-          baseCurrency={baseCurrency}
-          convertCurrency={convertCurrency}
-          handleConvertSelection={handleConvertSelection}
-          handleAmount={handleAmount}
-        />
-        <button type='submit'>Submit</button>
-      </form>
+      <section className='form-container'>
+        <form className='inputs-form' onSubmit={onSubmit} id='form'>
+          <Input
+            options={options}
+            handleBaseSelection={handleBaseSelection}
+            handleConvertSelection={handleConvertSelection}
+            handleAmount={handleAmount}
+            baseCurrency={baseCurrency}
+            convertCurrency={convertCurrency}
+          />
+        </form>
+        <div className='convert-button-container'>
+          <div className='conversion-container'>
+            <p className='rate-result'>1.92BAM</p>
+            <small>Mid-market exchange rate 8:32PM PST</small>
+          </div>
+          <button className='convert-button' type='submit' form='form'>
+            Convert
+          </button>
+        </div>
+      </section>
     </main>
   )
 }
 
 export default Home
-
-//next
-// API call to get all Currency codes
-// Set these codes to state
-// Create dropdown selection menu based on data

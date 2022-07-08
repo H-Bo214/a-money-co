@@ -51,7 +51,7 @@ const options = [
   },
   {
     value: 'BAM',
-    label: 'Bosnia-Herzegovina Convertible Mark',
+    label: 'Bosnia-Herzegovina Convertible Mark - BAM',
     flag: '',
   },
   {
@@ -746,7 +746,7 @@ const options = [
   },
   {
     value: 'USD',
-    label: 'United States Dollar',
+    label: 'United States Dollar - USD',
     flag: '',
   },
   {

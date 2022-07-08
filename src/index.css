@@ -13,3 +13,7 @@ html {
   background-size: cover;
   overflow: hidden;
 }
+
+body {
+  min-width: 380px;
+}

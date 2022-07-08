@@ -1,0 +1,25 @@
+.amount-input {
+  height: 4.3rem;
+  margin-right: 1.2rem;
+  width: 20rem;
+  border-radius: 18px;
+  border: 1px solid #463182;
+}
+
+/* .select { */
+/* height: 4.3rem; */
+/* margin-right: 1.2rem;
+  width: 20rem;
+  border-radius: 18px; */
+/* border: 1px solid #463182; */
+/* } */
+
+.arrows-image {
+  width: 3rem;
+}
+
+.category-title {
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
