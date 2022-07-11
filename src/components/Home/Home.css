@@ -50,13 +50,20 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 2px solid salmon;
   margin-top: 2.1rem;
   margin-bottom: 2.5rem;
+  align-items: center;
 }
 
-.conversion-container {
-  /* border: 2px solid red; */
+.convert-button {
+  width: 8rem;
+  border-radius: 2.8rem;
+  background-color: #19ef88;
+  border: none;
+  height: 3rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: #181a3c;
 }
 
 .rate-result {

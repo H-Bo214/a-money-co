@@ -1,7 +1,7 @@
 import './Home.css'
 import options from '../../options'
 import Input from '../Input/Input'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { fetchConversion, fakeAPICall } from '../../apiCalls'
 
 const Home = () => {
@@ -69,7 +69,7 @@ const Home = () => {
             <small>Mid-market exchange rate 8:32PM PST</small>
           </div>
           <button className='convert-button' type='submit' form='form'>
-            Convert
+            CONVERT
           </button>
         </div>
       </section>
