@@ -1,3 +1,5 @@
+import flag from '../src/assets/images/us-flag.svg'
+
 const customStyles = {
   option: (provided) => ({
     ...provided,
@@ -8,14 +10,16 @@ const customStyles = {
     display: 'flex',
     width: '20rem',
     dropShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-    backgroundColor: '#FFF',
     borderRadius: '25px',
     height: '4.3rem',
+    background: `white url(${flag}) left  no-repeat`,
+    paddingTop: '10px',
+    paddingLeft: '10px',
+    backgroundOrigin: 'content-box',
   }),
   placeholder: (provided) => ({
     ...provided,
     color: '#51707b',
-    // height: '30rem',
   }),
   indicatorSeparator: (provided) => ({
     ...provided,
@@ -26,6 +30,11 @@ const customStyles = {
     const transition = 'opacity 300ms'
     return { ...provided, opacity, transition }
   },
+  valueContainer: (provided, state) => ({
+    ...provided,
+    marginLeft: '1rem',
+    paddingLeft: '1rem',
+  }),
 }
 
 export default customStyles

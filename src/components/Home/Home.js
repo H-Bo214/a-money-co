@@ -1,73 +1,92 @@
 import './Home.css'
 import options from '../../options'
-import Input from '../Input/Input'
+import Inputs from '../Inputs/Inputs'
 import { useState } from 'react'
+import { formatDate } from '../../helpers'
 import { fetchConversion, fakeAPICall } from '../../apiCalls'
+import usFlag from '../../assets/images/us-flag.svg'
 
 const Home = () => {
   const [baseCurrency, setBaseCurrency] = useState('USD')
-  const [convertCurrency, setConvertCurrency] = useState('')
-  const [amount, setAmount] = useState(null)
+  const [toCurrency, setToCurrency] = useState('')
+  const [amount, setAmount] = useState('')
+  const [flag, setFlag] = useState(usFlag)
+  const [flag2, setFlag2] = useState('')
+  const [data, setData] = useState({})
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    if (baseCurrency === convertCurrency) return
-    if (convertCurrency === '') return
-    if (amount === null) return
-    // const data = await fetchConversion(baseCurrency, convertCurrency, amount)
-    const fakeData = fakeAPICall()
+    if (baseCurrency === toCurrency) return
+    if (toCurrency === '') return
+    if (!amount || amount < 0) return
+    // const data = await fetchConversion(baseCurrency, toCurrency, amount)
+    const fakeData = await fakeAPICall()
+    setData(fakeData)
     console.log('fakeData', fakeData)
+    console.log('data', data)
+    // setData(data)
     setAmount('')
     setBaseCurrency('USD')
-    setConvertCurrency(null)
+    setToCurrency(null)
   }
 
   const handleBaseSelection = (e) => {
-    const { value } = e
-    console.log('value in 1st input', value)
+    const { value, flag } = e
     setBaseCurrency(value)
+    setFlag(flag)
   }
 
   const handleConvertSelection = (e) => {
     const { value, flag } = e
-    console.log('value in 2nd input', value)
-    setConvertCurrency(value)
+    setToCurrency(value)
+    setFlag2(flag)
   }
 
   const handleAmount = (e) => {
     const { value } = e.target
-    console.log('value of input', value)
     setAmount(value)
   }
-  console.log('rendered')
-  console.log('base', baseCurrency)
-  console.log('convert', convertCurrency)
-  console.log('amount', amount)
+  // console.log('rendered')
+  // console.log('base', baseCurrency)
+  // console.log('convert', toCurrency)
+  // console.log('amount', amount)
 
   return (
     <main className='main-container'>
       <section className='title-container'>
         <h1>Currency Converter</h1>
         <p className='description'>
-          Real-time exchange rates for 170 world currencies
+          Real-time exchange rates for 168 world currencies
         </p>
       </section>
       <section className='form-container'>
         <form className='inputs-form' onSubmit={onSubmit} id='form'>
-          <Input
+          <Inputs
             options={options}
             handleBaseSelection={handleBaseSelection}
             handleConvertSelection={handleConvertSelection}
             handleAmount={handleAmount}
             baseCurrency={baseCurrency}
-            convertCurrency={convertCurrency}
+            toCurrency={toCurrency}
+            amount={amount}
+            flag={flag}
+            flag2={flag2}
           />
         </form>
         <div className='convert-button-container'>
-          <div className='conversion-container'>
-            <p className='rate-result'>1.92BAM</p>
-            <small>Mid-market exchange rate 8:32PM PST</small>
-          </div>
+          {data.result ? (
+            <div className='conversion-container'>
+              <p className='rate-result'>
+                {data.result} ${data.query.to}
+              </p>
+              <small>Mid-market exchange rate {formatDate(data.date)}</small>
+            </div>
+          ) : (
+            <div className='conversion-container'>
+              <p className='rate-result'>Rate</p>
+              <small>Mid-market exchange rate</small>
+            </div>
+          )}
           <button className='convert-button' type='submit' form='form'>
             CONVERT
           </button>
