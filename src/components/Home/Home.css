@@ -1,5 +1,4 @@
 .main-container {
-  border: 2px solid lime;
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;

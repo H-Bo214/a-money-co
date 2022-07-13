@@ -1,6 +1,7 @@
 import './Home.css'
 import options from '../../options'
 import Inputs from '../Inputs/Inputs'
+import Error from '../Error/Error'
 import { useState } from 'react'
 import { formatDate } from '../../helpers'
 import { fetchConversion, fakeAPICall } from '../../apiCalls'
@@ -13,17 +14,21 @@ const Home = () => {
   const [flag, setFlag] = useState(usFlag)
   const [flag2, setFlag2] = useState('')
   const [data, setData] = useState({})
+  const [error, setError] = useState('')
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    if (baseCurrency === toCurrency) return
-    if (toCurrency === '') return
-    if (!amount || amount < 0) return
+    if (baseCurrency === toCurrency)
+      return setError('Select different currencies.')
+    if (toCurrency === '')
+      return setError('Please select a covert to currency.')
+    if (!amount || amount < 0)
+      return setError('Please enter a positive amount.')
     // const data = await fetchConversion(baseCurrency, toCurrency, amount)
     const fakeData = await fakeAPICall()
     setData(fakeData)
     console.log('fakeData', fakeData)
-    console.log('data', data)
+    // console.log('data', data)
     // setData(data)
     setAmount('')
     setBaseCurrency('USD')
@@ -71,6 +76,7 @@ const Home = () => {
             amount={amount}
             flag={flag}
             flag2={flag2}
+            setError={setError}
           />
         </form>
         <div className='convert-button-container'>
@@ -92,6 +98,7 @@ const Home = () => {
           </button>
         </div>
       </section>
+      {error && <Error error={error} />}
     </main>
   )
 }

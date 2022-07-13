@@ -11,6 +11,7 @@ const Input = ({
   amount,
   flag,
   flag2,
+  setError,
 }) => {
   const customStyles = {
     option: (provided) => ({
@@ -25,7 +26,7 @@ const Input = ({
       borderRadius: '25px',
       height: '4.3rem',
       background: `white url(${flag}) left  no-repeat`,
-      paddingTop: '10px',
+      // paddingTop: '10px',
       paddingLeft: '10px',
       backgroundOrigin: 'content-box',
     }),
@@ -66,7 +67,7 @@ const Input = ({
       borderRadius: '25px',
       height: '4.3rem',
       background: `white url(${flag2}) left  no-repeat`,
-      paddingTop: '10px',
+      // paddingTop: '10px',
       paddingLeft: '10px',
       backgroundOrigin: 'content-box',
     }),
@@ -95,32 +96,39 @@ const Input = ({
   }
 
   console.log('toCurrency', toCurrency)
-  console.log('toCurrency', toCurrency)
-  console.log('toCurrency', toCurrency)
 
   return (
     <>
-      <div>
-        <p className='category-title'>Amount</p>
+      <div className='amount-input-container'>
+        <label htmlFor='amount' className='category-title-amount'>
+          Amount
+        </label>
         <input
-          type='text'
+          type='number'
           onChange={handleAmount}
           name='amount'
           value={amount}
           placeholder='1.00'
-          maxLength={7}
+          min='1'
+          max='999999'
           className='amount-input'
+          onFocus={() => setError('')}
+          id='amount'
         />
       </div>
       <div className='select-img-container'>
         <div>
-          <p className='category-title'>From</p>
+          <label htmlFor='from' className='category-title-from'>
+            From
+          </label>
           <Select
             options={options}
             onChange={handleBaseSelection}
             defaultValue={options[149]}
             className='select'
             styles={customStyles}
+            onFocus={() => setError('')}
+            id='from'
           />
         </div>
         <div className='image-container'>
@@ -131,7 +139,9 @@ const Input = ({
           />
         </div>
         <div>
-          <p className='category-title'>To</p>
+          <label htmlFor='to' className='category-title-to'>
+            To
+          </label>
           <Select
             options={options}
             onChange={handleConvertSelection}
@@ -139,6 +149,8 @@ const Input = ({
             placeholder='Select...'
             className='select'
             styles={customStyles2}
+            onFocus={() => setError('')}
+            id='to'
           />
         </div>
       </div>

@@ -11,3 +11,13 @@ header {
   color: #fff;
   margin-left: 0.8rem;
 }
+
+@media only screen and (max-width: 890px) {
+  header {
+    padding-left: 2rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+  }
+}
