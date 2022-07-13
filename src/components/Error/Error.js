@@ -1,6 +1,6 @@
 const Error = ({ error }) => {
   const styles = {
-    color: '#fff',
+    color: '#F44336',
   }
 
   return (

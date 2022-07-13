@@ -63,6 +63,7 @@ const Home = () => {
         <p className='description'>
           Real-time exchange rates for 168 world currencies
         </p>
+        {error && <Error error={error} />}
       </section>
       <section className='form-container'>
         <form className='inputs-form' onSubmit={onSubmit} id='form'>
@@ -98,7 +99,6 @@ const Home = () => {
           </button>
         </div>
       </section>
-      {error && <Error error={error} />}
     </main>
   )
 }
