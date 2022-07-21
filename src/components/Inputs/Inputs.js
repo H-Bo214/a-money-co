@@ -7,16 +7,21 @@ const Input = ({
   handleBaseSelection,
   handleConvertSelection,
   handleAmount,
-  baseCurrency,
-  toCurrency,
   amount,
   setError,
 }) => {
   const customStyles = {
+    menu: (provided) => ({
+      ...provided,
+      border: '2px solid #19EF88',
+    }),
     option: (provided) => ({
       ...provided,
-      borderBottom: '1px solid #463182',
+      borderBottom: '2px solid #463182',
       padding: '12px 12px',
+      '&:hover': {
+        backgroundColor: 'rgba(25, 239, 136, .30)',
+      },
     }),
     control: () => ({
       display: 'flex',
@@ -29,9 +34,9 @@ const Input = ({
       fontFamily: 'Nunito, sans-serif',
       fontSize: '1.125rem',
       padding: '1rem, 1rem, 0, 0',
-      border: 'none',
       cursor: 'pointer',
       boxShadow: 'none',
+      border: '2px solid transparent',
       '&:hover': {
         border: '2px solid #19EF88',
       },
@@ -59,14 +64,6 @@ const Input = ({
     }),
   }
 
-  console.log('toCurrency', toCurrency)
-  console.log('baseCurrency', baseCurrency)
-  console.log('amount', amount)
-  // console.log('options', options)
-
-  const handleFocus = () => {
-    console.log('hello')
-  }
   return (
     <>
       <div className='amount-input-container'>
@@ -96,7 +93,7 @@ const Input = ({
             defaultValue={options[148]}
             className='select'
             styles={customStyles}
-            onFocus={handleFocus}
+            onFocus={() => setError('')}
             id='from'
             blurInputOnSelect
             noOptionsMessage={() => 'No results found'}
@@ -137,7 +134,7 @@ const Input = ({
               </div>
             )}
             onChange={handleConvertSelection}
-            defaultValue={toCurrency}
+            defaultValue={null}
             placeholder='Select...'
             className='select'
             styles={customStyles}

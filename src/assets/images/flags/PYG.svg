@@ -1,0 +1,27 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2754_3516" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+<rect width="23" height="23" fill="white"/>
+</mask>
+<g mask="url(#mask0_2754_3516)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V23H23V0H0Z" fill="#F7FCFF"/>
+<mask id="mask1_2754_3516" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V23H23V0H0Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_2754_3516)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.625 11.4998C8.625 13.6169 9.91218 15.3332 11.5 15.3332C13.0878 15.3332 14.375 13.6169 14.375 11.4998C14.375 9.38275 13.0878 7.6665 11.5 7.6665C9.91218 7.6665 8.625 9.38275 8.625 11.4998ZM13.6562 11.4998C13.6562 13.0877 12.6909 14.3748 11.5 14.3748C10.3091 14.3748 9.34375 13.0877 9.34375 11.4998C9.34375 9.91202 10.3091 8.62484 11.5 8.62484C12.6909 8.62484 13.6562 9.91202 13.6562 11.4998Z" fill="#272727"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V7.66667H23V0H0Z" fill="#F05234"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15.3335V23.0002H23V15.3335H0Z" fill="#3D58DB"/>
+<path d="M10.478 9.44508L10.8871 10.233C10.4782 10.6105 10.355 11.1326 10.5114 11.911C10.6645 12.6727 11.0036 13.0298 11.6027 13.0575L11.5778 14.0153C10.6638 13.973 10.0523 13.3291 9.81714 12.1591C9.58537 11.0057 9.80768 10.0638 10.478 9.44508Z" fill="#73BE4A"/>
+<path d="M12.5239 9.44508L12.1148 10.233C12.5237 10.6105 12.6469 11.1326 12.4905 11.911C12.3374 12.6727 11.9983 13.0298 11.3992 13.0575L11.4241 14.0153C12.3381 13.973 12.9496 13.3291 13.1848 12.1591C13.4165 11.0057 13.1942 10.0638 12.5239 9.44508Z" fill="#73BE4A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5017 12.216C11.8987 12.216 12.2205 11.7869 12.2205 11.2576C12.2205 10.7284 11.8987 10.2993 11.5017 10.2993C11.1048 10.2993 10.783 10.7284 10.783 11.2576C10.783 11.7869 11.1048 12.216 11.5017 12.216Z" fill="#FBCD17"/>
+</g>
+</g>
+<rect width="23" height="23" rx="11.5" fill="url(#paint0_linear_2754_3516)" style="mix-blend-mode:overlay"/>
+<rect x="0.5" y="0.5" width="22" height="22" rx="11" stroke="black" stroke-opacity="0.1"/>
+<defs>
+<linearGradient id="paint0_linear_2754_3516" x1="11.5" y1="0" x2="11.5" y2="23" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.7"/>
+<stop offset="1" stop-opacity="0.3"/>
+</linearGradient>
+</defs>
+</svg>

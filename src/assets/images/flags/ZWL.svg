@@ -1,0 +1,32 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2757_6141" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+<rect width="23" height="23" fill="white"/>
+</mask>
+<g mask="url(#mask0_2757_6141)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V23H23V0H0Z" fill="#F7FCFF"/>
+<mask id="mask1_2757_6141" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V23H23V0H0Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_2757_6141)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.9165V21.0832H23V1.9165H0Z" fill="#FFCC00"/>
+<path d="M0 8.7085H-0.875V9.5835V13.4168V14.2918H0H23H23.875V13.4168V9.5835V8.7085H23H0Z" fill="#272727" stroke="#E31C1C" stroke-width="1.75"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 3.83333V0H23V3.83333H0ZM0 23V19.1667H23V23H0Z" fill="#5DA923"/>
+</g>
+<path d="M0.352152 -0.354949L-0.5 -1.20039V0V23V24.1793L0.34763 23.3594L12.0857 12.005L12.4526 11.6501L12.0903 11.2907L0.352152 -0.354949Z" fill="#F7FCFF" stroke="#272727"/>
+<mask id="mask2_2757_6141" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="23">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V23L11.7381 11.6456L0 0Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_2757_6141)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37513 13.6836L2.65902 16.6069L3.90488 12.7002L1.76414 9.95144H4.29099L5.32784 6.63672L6.4291 9.95144H8.95164L6.69782 12.7002L7.8258 16.6069L5.37513 13.6836Z" fill="#E31C1C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.6064 8.07099C3.6064 8.07099 3.56698 7.94424 3.79972 7.83217C4.03247 7.72011 4.10347 7.48265 4.28592 7.65741C4.46837 7.83217 4.58251 7.48081 4.63486 7.98476C4.68721 8.48872 4.8315 9.28339 4.8315 9.28339L7.19444 11.6511H6.75048C6.75048 11.6511 6.05915 13.0054 6.1733 14.1937C6.1733 14.1937 5.69631 14.0969 5.04978 14.0969C4.40326 14.0969 3.9798 14.3035 3.9798 14.3035L3.6064 12.46C3.6064 12.46 3.7416 12.1503 3.79972 11.9007C3.85784 11.6511 4.09849 11.605 4.09849 11.4065C4.09849 11.2079 3.86112 11.0415 3.9798 10.5275C4.09849 10.0135 4.09849 8.47593 4.09849 8.47593C4.09849 8.47593 3.72339 8.256 3.79972 8.256C3.87605 8.256 4.05005 8.07099 3.92489 8.07099C3.79972 8.07099 3.6064 8.07099 3.6064 8.07099Z" fill="#FFCC00"/>
+</g>
+</g>
+<rect width="23" height="23" rx="11.5" fill="url(#paint0_linear_2757_6141)" style="mix-blend-mode:overlay"/>
+<rect x="0.5" y="0.5" width="22" height="22" rx="11" stroke="black" stroke-opacity="0.1"/>
+<defs>
+<linearGradient id="paint0_linear_2757_6141" x1="11.5" y1="0" x2="11.5" y2="23" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.7"/>
+<stop offset="1" stop-opacity="0.3"/>
+</linearGradient>
+</defs>
+</svg>

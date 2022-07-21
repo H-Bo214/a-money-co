@@ -8,7 +8,7 @@ import { formatTime } from '../../helpers'
 
 const Home = () => {
   const [baseCurrency, setBaseCurrency] = useState('USD')
-  const [toCurrency, setToCurrency] = useState('')
+  const [toCurrency, setToCurrency] = useState(null)
   const [amount, setAmount] = useState('')
   const [data, setData] = useState({})
   const [error, setError] = useState('')
@@ -17,13 +17,16 @@ const Home = () => {
     e.preventDefault()
     if (baseCurrency === toCurrency)
       return setError('Select a different currency.')
-    if (toCurrency === '') return setError('Select a currency to covert to.')
-    if (!amount || amount < 0) return setError('Enter a positive number.')
-    // const data = await fetchConversion(baseCurrency, toCurrency, amount)
+    if (toCurrency === null) return setError('Select a currency to covert to.')
+    if (!amount || amount < 0)
+      return setError('Enter an amount greater than 0.')
+    // const result = await fetchConversion(baseCurrency, toCurrency, amount)
     const fakeData = fakeAPICall()
     setData(fakeData)
-    console.log('fakeData', fakeData)
-    setAmount('')
+    setToCurrency(null)
+    // setData(result)
+    // console.log('fakeData', fakeData)
+    // console.log('result', result)
   }
 
   const handleBaseSelection = (e) => {
@@ -46,7 +49,7 @@ const Home = () => {
       <section className='title-container'>
         <h1>Currency Converter</h1>
         <p className='description'>
-          Real-time exchange rates for 168 world currencies
+          Real-time exchange rates for 164 world currencies
         </p>
         {error && <Error error={error} />}
       </section>
@@ -57,8 +60,6 @@ const Home = () => {
             handleBaseSelection={handleBaseSelection}
             handleConvertSelection={handleConvertSelection}
             handleAmount={handleAmount}
-            baseCurrency={baseCurrency}
-            toCurrency={toCurrency}
             amount={amount}
             setError={setError}
           />
