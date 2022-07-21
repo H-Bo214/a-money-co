@@ -3,58 +3,43 @@ import options from '../../options'
 import Inputs from '../Inputs/Inputs'
 import Error from '../Error/Error'
 import { useState } from 'react'
-import { formatDate } from '../../helpers'
 import { fetchConversion, fakeAPICall } from '../../apiCalls'
-import usFlag from '../../assets/images/us-flag.svg'
+import { formatTime } from '../../helpers'
 
 const Home = () => {
   const [baseCurrency, setBaseCurrency] = useState('USD')
   const [toCurrency, setToCurrency] = useState('')
   const [amount, setAmount] = useState('')
-  const [flag, setFlag] = useState(usFlag)
-  const [flag2, setFlag2] = useState('')
   const [data, setData] = useState({})
   const [error, setError] = useState('')
 
-  const onSubmit = async (e) => {
+  const handleConversion = async (e) => {
     e.preventDefault()
     if (baseCurrency === toCurrency)
-      return setError('Select different currencies.')
-    if (toCurrency === '')
-      return setError('Please select a covert to currency.')
-    if (!amount || amount < 0)
-      return setError('Please enter a positive amount.')
+      return setError('Select a different currency.')
+    if (toCurrency === '') return setError('Select a currency to covert to.')
+    if (!amount || amount < 0) return setError('Enter a positive number.')
     // const data = await fetchConversion(baseCurrency, toCurrency, amount)
-    const fakeData = await fakeAPICall()
+    const fakeData = fakeAPICall()
     setData(fakeData)
     console.log('fakeData', fakeData)
-    // console.log('data', data)
-    // setData(data)
     setAmount('')
-    setBaseCurrency('USD')
-    setToCurrency(null)
   }
 
   const handleBaseSelection = (e) => {
-    const { value, flag } = e
+    const { value } = e
     setBaseCurrency(value)
-    setFlag(flag)
   }
 
   const handleConvertSelection = (e) => {
-    const { value, flag } = e
+    const { value } = e
     setToCurrency(value)
-    setFlag2(flag)
   }
 
   const handleAmount = (e) => {
     const { value } = e.target
     setAmount(value)
   }
-  // console.log('rendered')
-  // console.log('base', baseCurrency)
-  // console.log('convert', toCurrency)
-  // console.log('amount', amount)
 
   return (
     <main className='main-container'>
@@ -66,7 +51,7 @@ const Home = () => {
         {error && <Error error={error} />}
       </section>
       <section className='form-container'>
-        <form className='inputs-form' onSubmit={onSubmit} id='form'>
+        <form className='inputs-form' onSubmit={handleConversion} id='form'>
           <Inputs
             options={options}
             handleBaseSelection={handleBaseSelection}
@@ -75,8 +60,6 @@ const Home = () => {
             baseCurrency={baseCurrency}
             toCurrency={toCurrency}
             amount={amount}
-            flag={flag}
-            flag2={flag2}
             setError={setError}
           />
         </form>
@@ -86,13 +69,12 @@ const Home = () => {
               <p className='rate-result'>
                 {data.result} ${data.query.to}
               </p>
-              <small>Mid-market exchange rate {formatDate(data.date)}</small>
+              <small>
+                Mid-market exchange rate at {formatTime(data.info.timestamp)}
+              </small>
             </div>
           ) : (
-            <div className='conversion-container'>
-              <p className='rate-result'>Rate</p>
-              <small>Mid-market exchange rate</small>
-            </div>
+            <div className='conversion-container'></div>
           )}
           <button className='convert-button' type='submit' form='form'>
             CONVERT

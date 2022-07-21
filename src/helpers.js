@@ -1,6 +1,5 @@
-const formatDate = (str) => {
-  const formatted = str.split('-').reverse().join('-')
-  return formatted
+const formatTime = (timestamp) => {
+  return new Date(timestamp * 1000).toLocaleTimeString()
 }
 
-export { formatDate }
+export { formatTime }

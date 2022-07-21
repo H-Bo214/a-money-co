@@ -7,69 +7,34 @@ const Input = ({
   handleBaseSelection,
   handleConvertSelection,
   handleAmount,
+  baseCurrency,
   toCurrency,
   amount,
-  flag,
-  flag2,
   setError,
 }) => {
   const customStyles = {
     option: (provided) => ({
       ...provided,
-      borderBottom: '1px solid #2E84FF',
+      borderBottom: '1px solid #463182',
       padding: '12px 12px',
     }),
     control: () => ({
       display: 'flex',
-      width: '20rem',
+      width: '21.25rem',
       dropShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-      borderRadius: '25px',
-      height: '4.3rem',
-      background: `white url(${flag}) left  no-repeat`,
-      // paddingTop: '10px',
-      paddingLeft: '10px',
+      borderRadius: '20px',
+      height: '4rem',
+      backgroundColor: '#fff',
       backgroundOrigin: 'content-box',
-    }),
-    placeholder: (provided) => ({
-      ...provided,
-      color: 'lightgray',
-    }),
-    indicatorSeparator: (provided) => ({
-      ...provided,
-      backgroundColor: '#FFF',
-    }),
-    dropdownIndicator: (provided) => ({
-      ...provided,
-      color: '#000',
-    }),
-    singleValue: (provided, state) => {
-      const opacity = state.isDisabled ? 0.5 : 1
-      const transition = 'opacity 300ms'
-      return { ...provided, opacity, transition }
-    },
-    valueContainer: (provided, state) => ({
-      ...provided,
-      marginLeft: '1rem',
-      paddingLeft: '1rem',
-    }),
-  }
-
-  const customStyles2 = {
-    option: (provided) => ({
-      ...provided,
-      borderBottom: '1px solid #2E84FF',
-      padding: '12px 12px',
-    }),
-    control: () => ({
-      display: 'flex',
-      width: '20rem',
-      dropShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-      borderRadius: '25px',
-      height: '4.3rem',
-      background: `white url(${flag2}) left  no-repeat`,
-      // paddingTop: '10px',
-      paddingLeft: '10px',
-      backgroundOrigin: 'content-box',
+      fontFamily: 'Nunito, sans-serif',
+      fontSize: '1.125rem',
+      padding: '1rem, 1rem, 0, 0',
+      border: 'none',
+      cursor: 'pointer',
+      boxShadow: 'none',
+      '&:hover': {
+        border: '2px solid #19EF88',
+      },
     }),
     placeholder: (provided) => ({
       ...provided,
@@ -90,13 +55,18 @@ const Input = ({
     },
     valueContainer: (provided, state) => ({
       ...provided,
-      marginLeft: '1rem',
       paddingLeft: '1rem',
     }),
   }
 
   console.log('toCurrency', toCurrency)
+  console.log('baseCurrency', baseCurrency)
+  console.log('amount', amount)
+  // console.log('options', options)
 
+  const handleFocus = () => {
+    console.log('hello')
+  }
   return (
     <>
       <div className='amount-input-container'>
@@ -122,13 +92,25 @@ const Input = ({
             From
           </label>
           <Select
-            options={options}
             onChange={handleBaseSelection}
-            defaultValue={options[149]}
+            defaultValue={options[148]}
             className='select'
             styles={customStyles}
-            onFocus={() => setError('')}
+            onFocus={handleFocus}
             id='from'
+            blurInputOnSelect
+            noOptionsMessage={() => 'No results found'}
+            options={options}
+            formatOptionLabel={(country) => (
+              <div className='flag-image-container'>
+                <img
+                  src={country.flag}
+                  alt='country flag'
+                  className='flag-image'
+                />
+                <span>{country.label}</span>
+              </div>
+            )}
           />
         </div>
         <div className='image-container'>
@@ -144,13 +126,25 @@ const Input = ({
           </label>
           <Select
             options={options}
+            formatOptionLabel={(country) => (
+              <div className='flag-image-container'>
+                <img
+                  src={country.flag}
+                  alt='country flag'
+                  className='flag-image'
+                />
+                <span>{country.label}</span>
+              </div>
+            )}
             onChange={handleConvertSelection}
             defaultValue={toCurrency}
             placeholder='Select...'
             className='select'
-            styles={customStyles2}
+            styles={customStyles}
             onFocus={() => setError('')}
             id='to'
+            blurInputOnSelect
+            noOptionsMessage={() => 'No results found'}
           />
         </div>
       </div>

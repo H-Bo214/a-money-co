@@ -1,350 +1,415 @@
-import usa from '../src/assets/images/us-flag.svg'
+import { toBeDisabled } from '@testing-library/jest-dom/dist/matchers'
+import { isClickableInput } from '@testing-library/user-event/dist/utils'
+import AED from '../src/assets/images/flags/AED.svg'
+import AFN from '../src/assets/images/flags/AFN.svg'
+import ALL from '../src/assets/images/flags/ALL.svg'
+import AMD from '../src/assets/images/flags/AMD.svg'
+import ANG from '../src/assets/images/flags/ANG.svg'
+import AOA from '../src/assets/images/flags/AOA.svg'
+import ARS from '../src/assets/images/flags/ARS.svg'
+import AUD from '../src/assets/images/flags/AUD.svg'
+import AWG from '../src/assets/images/flags/AWG.svg'
+import AZN from '../src/assets/images/flags/AZN.svg'
+import BAM from '../src/assets/images/flags/BAM.svg'
+import BBD from '../src/assets/images/flags/BBD.svg'
+import BDT from '../src/assets/images/flags/BDT.svg'
+import BGN from '../src/assets/images/flags/BGN.svg'
+import BHD from '../src/assets/images/flags/BHD.svg'
+import BIF from '../src/assets/images/flags/BIF.svg'
+import BMD from '../src/assets/images/flags/BMD.svg'
+import BND from '../src/assets/images/flags/BND.svg'
+import BOB from '../src/assets/images/flags/BOB.svg'
+import BRL from '../src/assets/images/flags/BRL.svg'
+import BSB from '../src/assets/images/flags/BSB.svg'
+import BTN from '../src/assets/images/flags/BTN.svg'
+import BWP from '../src/assets/images/flags/BWP.svg'
+import BYN from '../src/assets/images/flags/BYN.svg'
+import BYR from '../src/assets/images/flags/BYR.svg'
+import BZD from '../src/assets/images/flags/BZD.svg'
+import CAD from '../src/assets/images/flags/CAD.svg'
+import CDF from '../src/assets/images/flags/CDF.svg'
+import CHF from '../src/assets/images/flags/CHF.svg'
+import CLF from '../src/assets/images/flags/CLF.svg'
+import CLP from '../src/assets/images/flags/CLP.svg'
+import CNY from '../src/assets/images/flags/CNY.svg'
+import COP from '../src/assets/images/flags/COP.svg'
+import CRC from '../src/assets/images/flags/CRC.svg'
+import CUC from '../src/assets/images/flags/CUC.svg'
+import CUP from '../src/assets/images/flags/CUP.svg'
+import CVE from '../src/assets/images/flags/CVE.svg'
+import CZK from '../src/assets/images/flags/CZK.svg'
+import DJF from '../src/assets/images/flags/DJF.svg'
+import DKK from '../src/assets/images/flags/DKK.svg'
+import DOP from '../src/assets/images/flags/DOP.svg'
+import DZD from '../src/assets/images/flags/DZD.svg'
+import EGP from '../src/assets/images/flags/EGP.svg'
+import ERN from '../src/assets/images/flags/ERN.svg'
+import ETB from '../src/assets/images/flags/ETB.svg'
+import EUR from '../src/assets/images/flags/EUR.svg'
+import FJD from '../src/assets/images/flags/FJD.svg'
+import FKP from '../src/assets/images/flags/FKP.svg'
+import GBP from '../src/assets/images/flags/GBP.svg'
+import GEL from '../src/assets/images/flags/GEL.svg'
+import GGP from '../src/assets/images/flags/GGP.svg'
+import GHS from '../src/assets/images/flags/GHS.svg'
+import GIP from '../src/assets/images/flags/GIP.svg'
+import GMD from '../src/assets/images/flags/GMD.svg'
+import GNF from '../src/assets/images/flags/GNF.svg'
+import GTQ from '../src/assets/images/flags/GTQ.svg'
+import GYD from '../src/assets/images/flags/GYD.svg'
+import HKD from '../src/assets/images/flags/HKD.svg'
+import HNL from '../src/assets/images/flags/HNL.svg'
+import HRK from '../src/assets/images/flags/HRK.svg'
+import HTG from '../src/assets/images/flags/HTG.svg'
+import HUF from '../src/assets/images/flags/HUF.svg'
+import IDR from '../src/assets/images/flags/IDR.svg'
+import ILS from '../src/assets/images/flags/ILS.svg'
+import IMP from '../src/assets/images/flags/IMP.svg'
+import INR from '../src/assets/images/flags/INR.svg'
+import IQD from '../src/assets/images/flags/IQD.svg'
+import IRR from '../src/assets/images/flags/IRR.svg'
+import USD from '../src/assets/images/flags/USD.svg'
 
 const options = [
   {
     value: 'AED',
     label: 'AED - United Arab Emirates Dirham',
-    flag: '',
+    flag: AED,
   },
   {
     value: 'AFN',
     label: 'AFN - Afghan Afghani',
-    flag: '',
+    flag: AFN,
   },
   {
     value: 'ALL',
     label: 'ALL - Albanian Lek',
-    flag: '',
+    flag: ALL,
   },
   {
     value: 'AMD',
     label: 'AMD - Armenian Dram',
-    flag: '',
+    flag: AMD,
   },
   {
     value: 'ANG',
     label: 'ANG - Netherlands Antillean Guilder',
-    flag: '',
+    flag: ANG,
   },
   {
     value: 'AOA',
     label: 'AOA - Angolan Kwanza',
-    flag: '',
+    flag: AOA,
   },
   {
     value: 'ARS',
     label: 'ARS - Argentine Peso',
-    flag: '',
+    flag: ARS,
   },
   {
     value: 'AUD',
     label: 'AUD - Australian Dollar',
-    flag: '',
+    flag: AUD,
   },
   {
     value: 'AWG',
     label: 'AWG - Aruban Florin',
-    flag: '',
+    flag: AWG,
   },
   {
     value: 'AZN',
     label: 'AZN - Azerbaijani Manat',
-    flag: '',
+    flag: AZN,
   },
   {
     value: 'BAM',
     label: 'BAM - Bosnia-Herzegovina Convertible Mark',
-    flag: '',
+    flag: BAM,
   },
   {
     value: 'BBD',
     label: 'BBD - Barbadian Dollar',
-    flag: '',
+    flag: BBD,
   },
   {
     value: 'BDT',
     label: 'BDT - Bangladeshi Taka',
-    flag: '',
+    flag: BDT,
   },
   {
     value: 'BGN',
     label: 'BGN - Bulgarian Lev',
-    flag: '',
+    flag: BGN,
   },
   {
     value: 'BHD',
     label: 'BHD - Bahraini Dinar',
-    flag: '',
+    flag: BHD,
   },
   {
     value: 'BIF',
     label: 'BIF - Burundian Franc',
-    flag: '',
+    flag: BIF,
   },
   {
     value: 'BMD',
     label: 'BMD - Bermudan Dollar',
-    flag: '',
+    flag: BMD,
   },
   {
     value: 'BND',
     label: 'BND - Brunei Dollar',
-    flag: '',
+    flag: BND,
   },
   {
     value: 'BOB',
     label: 'BOB - Bolivian Boliviano',
-    flag: '',
+    flag: BOB,
   },
   {
     value: 'BRL',
     label: 'BRL - Brazilian Real',
-    flag: '',
+    flag: BRL,
   },
   {
     value: 'BSD',
     label: 'BSD - Bahamian Dollar',
-    flag: '',
-  },
-  {
-    value: 'BTC',
-    label: 'Bitcoin',
-    flag: '',
+    flag: BSB,
   },
   {
     value: 'BTN',
     label: 'BTN - Bhutanese Ngultrum',
-    flag: '',
+    flag: BTN,
   },
   {
     value: 'BWP',
     label: 'BWP - Botswanan Pula',
-    flag: '',
+    flag: BWP,
   },
   {
     value: 'BYN',
     label: 'BYN - New Belarusian Ruble',
-    flag: '',
+    flag: BYN,
   },
   {
     value: 'BYR',
     label: 'BYR - Belarusian Ruble',
-    flag: '',
+    flag: BYR,
   },
   {
     value: 'BZD',
     label: 'BZD - Belize Dollar',
-    flag: '',
+    flag: BZD,
   },
   {
     value: 'CAD',
     label: 'CAD - Canadian Dollar',
-    flag: '',
+    flag: CAD,
   },
   {
     value: 'CDF',
     label: 'CDF - Congolese Franc',
-    flag: '',
+    flag: CDF,
   },
   {
     value: 'CHF',
     label: 'CHF - Swiss Franc',
-    flag: '',
+    flag: CHF,
   },
   {
     value: 'CLF',
     label: 'CLF - Chilean Unit of Account (UF)',
-    flag: '',
+    flag: CLF,
   },
   {
     value: 'CLP',
     label: 'CLP - Chilean Peso',
-    flag: '',
+    flag: CLP,
   },
   {
     value: 'CNY',
     label: 'CNY - Chinese Yuan',
-    flag: '',
+    flag: CNY,
   },
   {
     value: 'COP',
     label: 'COP - Colombian Peso',
-    flag: '',
+    flag: COP,
   },
   {
     value: 'CRC',
     label: 'CRC - Costa Rican Colón',
-    flag: '',
+    flag: CRC,
   },
   {
     value: 'CUC',
     label: 'CUC - Cuban Convertible Peso',
-    flag: '',
+    flag: CUC,
   },
   {
     value: 'CUP',
     label: 'CUP - Cuban Peso',
-    flag: '',
+    flag: CUP,
   },
   {
     value: 'CVE',
     label: 'CVE - Cape Verdean Escudo',
-    flag: '',
+    flag: CVE,
   },
   {
     value: 'CZK',
     label: 'CZK - Czech Republic Koruna',
-    flag: '',
+    flag: CZK,
   },
   {
     value: 'DJF',
     label: 'DJF - Djiboutian Franc',
-    flag: '',
+    flag: DJF,
   },
   {
     value: 'DKK',
     label: 'DKK - Danish Krone',
-    flag: '',
+    flag: DKK,
   },
   {
     value: 'DOP',
     label: 'DOP - Dominican Peso',
-    flag: '',
+    flag: DOP,
   },
   {
     value: 'DZD',
     label: 'DZD - Algerian Dinar',
-    flag: '',
+    flag: DZD,
   },
   {
     value: 'EGP',
     label: 'EGP - Egyptian Pound',
-    flag: '',
+    flag: EGP,
   },
   {
     value: 'ERN',
     label: 'ERN - Eritrean Nakfa',
-    flag: '',
+    flag: ERN,
   },
   {
     value: 'ETB',
     label: 'ETB - Ethiopian Birr',
-    flag: '',
+    flag: ETB,
   },
   {
     value: 'EUR',
     label: 'EUR - Euro',
-    flag: '',
+    flag: EUR,
   },
   {
     value: 'FJD',
     label: 'FJD - Fijian Dollar',
-    flag: '',
+    flag: FJD,
   },
   {
     value: 'FKP',
     label: 'FKP - Falkland Islands Pound',
-    flag: '',
+    flag: FKP,
   },
   {
     value: 'GBP',
     label: 'GBP - British Pound Sterling',
-    flag: '',
+    flag: GBP,
   },
   {
     value: 'GEL',
     label: 'GEL - Georgian Lari',
-    flag: '',
+    flag: GEL,
   },
   {
     value: 'GGP',
     label: 'GGP - Guernsey Pound',
-    flag: '',
+    flag: GGP,
   },
   {
     value: 'GHS',
     label: 'GHS - Ghanaian Cedi',
-    flag: '',
+    flag: GHS,
   },
   {
     value: 'GIP',
     label: 'GIP - Gibraltar Pound',
-    flag: '',
+    flag: GIP,
   },
   {
     value: 'GMD',
     label: 'GMD - Gambian Dalasi',
-    flag: '',
+    flag: GMD,
   },
   {
     value: 'GNF',
     label: 'GNF - Guinean Franc',
-    flag: '',
+    flag: GNF,
   },
   {
     value: 'GTQ',
     label: 'GTQ - Guatemalan Quetzal',
-    flag: '',
+    flag: GTQ,
   },
   {
     value: 'GYD',
     label: 'GYD - Guyanaese Dollar',
-    flag: '',
+    flag: GYD,
   },
   {
     value: 'HKD',
     label: 'HKD - Hong Kong Dollar',
-    flag: '',
+    flag: HKD,
   },
   {
     value: 'HNL',
     label: 'HNL - Honduran Lempira',
-    flag: '',
+    flag: HNL,
   },
   {
     value: 'HRK',
     label: 'HRK - Croatian Kuna',
-    flag: '',
+    flag: HRK,
   },
   {
     value: 'HTG',
     label: 'HTG - Haitian Gourde',
-    flag: '',
+    flag: HTG,
   },
   {
     value: 'HUF',
     label: 'HUF - Hungarian Forint',
-    flag: '',
+    flag: HUF,
   },
   {
     value: 'IDR',
     label: 'IDR - Indonesian Rupiah',
-    flag: '',
+    flag: IDR,
   },
   {
     value: 'ILS',
     label: 'ILS - Israeli New Sheqel',
-    flag: '',
+    flag: ILS,
   },
   {
     value: 'IMP',
     label: 'IMP - Manx pound',
-    flag: '',
+    flag: IMP,
   },
   {
     value: 'INR',
     label: 'INR - Indian Rupee',
-    flag: '',
+    flag: INR,
   },
   {
     value: 'IQD',
     label: 'IQD - Iraqi Dinar',
-    flag: '',
+    flag: IQD,
   },
   {
     value: 'IRR',
     label: 'IRR - Iranian Rial',
-    flag: '',
+    flag: IRR,
   },
   {
     value: 'ISK',
@@ -749,7 +814,7 @@ const options = [
   {
     value: 'USD',
     label: 'USD - United States Dollar',
-    flag: usa,
+    flag: USD,
   },
   {
     value: 'UYU',
@@ -843,4 +908,16 @@ const options = [
   },
 ]
 
+// const options = [
+//   {
+//     value: 'USD',
+//     label: 'USD - United States Dollar',
+//     flag: usa,
+//   },
+//   {
+//     value: 'AED',
+//     label: 'AED - United Arab Emirates Dirham',
+//     flag: usa,
+//   },
+// ]
 export default options
