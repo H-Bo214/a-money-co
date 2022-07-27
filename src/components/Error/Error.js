@@ -1,11 +1,9 @@
-const Error = ({ error }) => {
-  const styles = {
-    color: '#F44336',
-  }
+import '../Error/Error.css'
 
+const Error = ({ error }) => {
   return (
     <>
-      <p style={styles}>{error}</p>
+      <p className='error-message'>{error}</p>
     </>
   )
 }

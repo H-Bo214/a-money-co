@@ -2,31 +2,12 @@
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
-  margin-top: 3rem;
+  margin: 3rem auto 0 auto;
   align-items: center;
-}
-
-.title-container {
-  text-align: center;
 }
 
 .arrows {
   width: 5rem;
-}
-
-h1 {
-  color: #19ef88;
-  line-height: 64%;
-  font-size: 4.3rem;
-  font-weight: 800;
-  margin-bottom: 2.8rem;
-}
-
-.description {
-  color: #fff;
-  line-height: 100%;
-  font-size: 1.75rem;
-  margin-bottom: 3.25rem;
 }
 
 .inputs-form {
@@ -45,40 +26,8 @@ h1 {
   background-color: rgba(20, 5, 50, 0.6);
 }
 
-.convert-button-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2.1rem;
-  margin-bottom: 2.5rem;
-  align-items: center;
-}
-
-.convert-button {
-  border-radius: 2.8rem;
-  background-color: #19ef88;
-  border: none;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.25rem;
-  color: #181a3c;
-  font-weight: 600;
-  line-height: 27px;
-  padding: 1rem;
-}
-
-.convert-button:hover {
-  background-color: #72fab9;
-}
-
-.rate-result {
-  font-size: 2.25rem;
-  font-weight: 800;
-  line-height: 39px;
-  color: #19ef88;
-  margin: 0;
-}
-
-small {
-  color: #fff;
-  font-size: 0.875rem;
+@media only screen and (max-width: 500px) {
+  .main-container {
+    margin: 1.5rem auto 0 auto;
+  }
 }

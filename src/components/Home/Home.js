@@ -1,86 +1,85 @@
 import './Home.css'
 import options from '../../options'
 import Inputs from '../Inputs/Inputs'
-import Error from '../Error/Error'
+import Title from '../Title/Title'
+import Results from '../Results/Results'
 import { useState } from 'react'
 import { fetchConversion, fakeAPICall } from '../../apiCalls'
-import { formatTime } from '../../helpers'
 
 const Home = () => {
-  const [baseCurrency, setBaseCurrency] = useState('USD')
-  const [toCurrency, setToCurrency] = useState(null)
-  const [amount, setAmount] = useState('')
+  const [formData, setFormData] = useState({ from: '', to: '', amount: '' })
   const [data, setData] = useState({})
   const [error, setError] = useState('')
+  const [isDisabled, setIsDisabled] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleConversion = async (e) => {
+    const { from, to, amount } = formData
     e.preventDefault()
-    if (baseCurrency === toCurrency)
-      return setError('Select a different currency.')
-    if (toCurrency === null) return setError('Select a currency to covert to.')
+    if (from === to) return setError('Select a different currency.')
+    if (to === '') return setError('Select a currency to covert to.')
     if (!amount || amount < 0)
       return setError('Enter an amount greater than 0.')
-    // const result = await fetchConversion(baseCurrency, toCurrency, amount)
+    setIsLoading(true)
+    // const data = await fetchConversion(formData)
+    // setData(data)
     const fakeData = fakeAPICall()
     setData(fakeData)
-    setToCurrency(null)
-    // setData(result)
-    // console.log('fakeData', fakeData)
-    // console.log('result', result)
+    setIsDisabled(true)
+    setIsLoading(false)
   }
 
-  const handleBaseSelection = (e) => {
+  const handleChange = (e) => {
+    setFormData((prevFormData) => {
+      return {
+        ...prevFormData,
+        [e.target.name]: e.target.value,
+      }
+    })
+  }
+
+  const handleFromCurrencyChange = (e) => {
     const { value } = e
-    setBaseCurrency(value)
+    setFormData((prevFormData) => {
+      return {
+        ...prevFormData,
+        from: value,
+      }
+    })
   }
 
-  const handleConvertSelection = (e) => {
+  const handleToCurrencyChange = (e) => {
     const { value } = e
-    setToCurrency(value)
+    setFormData((prevFormData) => {
+      return {
+        ...prevFormData,
+        to: value,
+      }
+    })
   }
 
-  const handleAmount = (e) => {
-    const { value } = e.target
-    setAmount(value)
+  const handleFocus = () => {
+    setIsDisabled(false)
+    setError('')
   }
 
   return (
     <main className='main-container'>
-      <section className='title-container'>
-        <h1>Currency Converter</h1>
-        <p className='description'>
-          Real-time exchange rates for 164 world currencies
-        </p>
-        {error && <Error error={error} />}
-      </section>
+      <Title error={error} />
       <section className='form-container'>
         <form className='inputs-form' onSubmit={handleConversion} id='form'>
           <Inputs
             options={options}
-            handleBaseSelection={handleBaseSelection}
-            handleConvertSelection={handleConvertSelection}
-            handleAmount={handleAmount}
-            amount={amount}
             setError={setError}
+            handleChange={handleChange}
+            formData={formData}
+            handleFromCurrencyChange={handleFromCurrencyChange}
+            handleToCurrencyChange={handleToCurrencyChange}
+            setIsDisabled={setIsDisabled}
+            handleFocus={handleFocus}
           />
         </form>
-        <div className='convert-button-container'>
-          {data.result ? (
-            <div className='conversion-container'>
-              <p className='rate-result'>
-                {data.result} ${data.query.to}
-              </p>
-              <small>
-                Mid-market exchange rate at {formatTime(data.info.timestamp)}
-              </small>
-            </div>
-          ) : (
-            <div className='conversion-container'></div>
-          )}
-          <button className='convert-button' type='submit' form='form'>
-            CONVERT
-          </button>
-        </div>
+        <Results data={data} isDisabled={isDisabled} isLoading={isLoading} />
       </section>
     </main>
   )

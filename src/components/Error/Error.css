@@ -1,0 +1,8 @@
+.error-message-container {
+  min-height: 25px;
+}
+
+.error-message {
+  color: red;
+  margin: 0 auto;
+}

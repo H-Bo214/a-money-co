@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+<div align="center">
+  <!-- Add your project logo if you have any -->
+  <img width=200px height=200px src="src/assets/images/a-money-co-logo.svg" alt="Project logo">
+</div> 
+  <h1 align="center">Currency Converter</h1>
+  <p align="center">
+    <!-- Add your tagline or very short intro of your project -->
+    Find exchange rates for 164 world currencies.
+  <br />
+  <a href="[INSERT LINK HERE]">Migrate</a> 
+  </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+[![Status](https://img.shields.io/badge/Currency%20Converter-Live-blueviolet)]([INSERT LINK HERE])
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![Status](https://img.shields.io/badge/JavaScript%20-grey?style=flat-square&logo=javascript)]() [![Status](https://img.shields.io/badge/HTML%20-grey?style=flat-square&logo=html5)]() [![Status](https://img.shields.io/badge/CSS%20-grey?style=flat-square&logo=css3&logoColor=1572B6)]() [![Status](https://img.shields.io/badge/React%20-grey?style=flat-square&logo=react)](https://reactjs.org/)
 
-### `npm test`
+[![Status](https://img.shields.io/badge/Figma%20-grey?style=flat-square&logo=figma)](https://www.figma.com/) [![Status](https://img.shields.io/badge/Emotion%20-grey?style=flat-square)](https://emotion.sh/docs/introduction) [![Status](https://img.shields.io/badge/React%20Select-grey?style=flat-square)](https://react-select.com/home) [![Status](https://img.shields.io/badge/React%20Spinners-grey?style=flat-square)](https://www.npmjs.com/package/react-spinners)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `npm run build`
+<hr />
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Add your project demo gif here -->
+  <h4 align="right">Open location in google maps</h4>
+  <img align="right" src="./migrate-sr-gif-3.gif" alt="migrate application gif" height="720"/>
+  <img src="./migrate-sr-gif-2.gif" alt="migrate application gif 2" height="720"/>
+  <h4>Search by city name</h4>
+  <br/>
+  <hr />
+  <h4 align="right">Select from a randomized list</h4>
+  <img align="right" src="./migrate-sr-gif-1.gif" alt="migrate application gif 3" height="720"/>
+  <img src="./migrate-sr-gif-4.gif" alt="migrate application gif 4" height="720"/>
+  <h4>Search via dropdown menu</h4>
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- You may write notes in your readme this way if you want to, it looks good and also different from other text -->
+<br/>
 
-### `npm run eject`
+> _**NOTE:** Mobile demos. Desktop version in progress._
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<hr />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3 align="center">Migrate provides demographic and quality of life information for major urban areas within North America. </h3>
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧐About
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A few years ago, my wife, dog and I moved from our home state to Colorado. Just couple years after that, we relocated to Washington. This series of moves made me realize what's most important to me when finding a new place live. My main motivators for change were based around the area's job opportunities, weather, and access to outdoor activities. I also assessed the overall quality of life, along with statistical information. All of this research inspired me to make Migrate. Migrate delivers accessible demographic and quality of life information for over 80 urban areas in North America. It provides a bird’s-eye view of urban areas through imagery, highlights, several rated categories and an overall score.
+<br/>
 
-## Learn More
+## 💡Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Search by major metropolitan area, select from a list or choose from randomized suggestions
+- Scores for 17 categories, including housing, safety, healthcare and more
+- Location coordinates that link to google maps
+- Mobile friendly design
+  <br/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⛏️Built with
 
-### Code Splitting
+- JavaScript
+- HTML
+- CSS
+- React
+- React Router v6
+- Git VCS
+- GitHub Projects
+- React Testing Library
+- Cypress
+- React-Select
+- React-Spinners
+- Emotion/React
+- Figma
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🏁Getting Started
 
-### Analyzing the Bundle Size
+<a href="https://migrate-na.netlify.app/">See it in action</a>
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🗓Planning, challenges and future improvements
 
-### Making a Progressive Web App
+I began planning out this project by reviewing the API documentation provided by Teleport, which led me to brainstorm features. From there, I planned on how to best get the information I needed. The Teleport API has a massive amount of data. Some challenges I faced involved retrieving data embedded deep in a structure that wasn't in a friendly, usable format. I overcame some learning curves as I built this project with several tools I hadn't used before, including React-Select, Emotion/React and Cypress. I also spent time researching React 18 and React Router v6's release changes. Throughout the project, I reviewed and refactored several parts of my code. I often reviewed my prior day's work to determine if I could DRY up the code or implement a better approach to the problem. Overall, I'm satisfied with the outcome and hope to add a desktop friendly version that can take advantage of the wealth of information provided by the Teleport API.
+<br/>
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔧Mock up and planning tools
 
-### Advanced Configuration
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<div align="center">
+  
+  <h2>Migrate comp</h2>
+  <img src="./migrate-comp.png" alt="Migrate comp">
+  <h2>HTML structure</h2>
+  <img src="./html-structure.png" alt="HTML structure">
+  <h2>User flow</h2>
+  <img src="./user-flow.png" alt="User flow structure">
+  <h2>React component structure</h2>
+  <img src="./component-structure.png" alt="component structure">
+  <h2>Cypress testing results</h2>
+  <img src="./cypress-e2e-ss.png" alt="cypress passing test results">
+  <h2>Lighthouse scores</h2>
+  <img src="./migrate-lighthouse-ss.png" alt="Migrate comp">
 
-### Deployment
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🎉Acknowledgement
 
-### `npm run build` fails to minify
+- [Teleport API](https://developers.teleport.org/)
+- [React-Select](https://react-select.com/home)
+- [React Spinners](https://www.npmjs.com/package/react-spinners)
+- [Favicon](https://favicon.io/)
+- [Emotion/React](https://emotion.sh/docs/@emotion/react)
+- [Flaticon - Saepul Nahwan](https://www.flaticon.com/authors/saepul-nahwan)
+- [City Images](https://developers.teleport.org/api/getting_started/)
+- All images belong to the original photographer and are used under creative commons. Attribution information can be located by searching:
+  https://api.teleport.org/api/urban_areas/slug: **city name** /images/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> _**NOTE:** city names must be lower case. With hyphen if city has 2 names ex. san-antonio_

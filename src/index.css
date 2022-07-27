@@ -12,8 +12,10 @@ html {
   -o-background-size: cover;
   background-size: cover;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 body {
   min-width: 380px;
+  margin: 0 auto;
 }

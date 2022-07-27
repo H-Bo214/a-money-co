@@ -1,6 +1,8 @@
 const apiKey = process.env.REACT_APP_FIXER_API_KEY
 
-export async function fetchConversion(baseCurrency, convertCurrency, amount) {
+export async function fetchConversion(formData) {
+  console.log('formData in call', formData)
+  const { from, to, amount } = formData
   const root = 'https://fixer-fixer-currency-v1.p.rapidapi.com'
   const options = {
     method: 'GET',
@@ -10,7 +12,7 @@ export async function fetchConversion(baseCurrency, convertCurrency, amount) {
     },
   }
   return fetch(
-    `${root}/convert?from=${baseCurrency}&to=${convertCurrency}&amount=${amount}`,
+    `${root}/convert?from=${from}&to=${to}&amount=${amount}`,
     options
   )
     .then((res) => res.json())

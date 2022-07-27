@@ -25,6 +25,12 @@ input::-webkit-inner-spin-button {
   font-family: 'Nunito', sans-serif;
   font-size: 1.25rem;
   cursor: pointer;
+  caret-color: #19ef88;
+  border: 2px solid transparent;
+}
+
+.amount-input:hover {
+  border: 2px solid #19ef88;
 }
 
 .arrows-image {
@@ -65,14 +71,28 @@ input::-webkit-inner-spin-button {
 
   .arrows-image {
     width: 3.125rem;
-  }
-
-  h1 {
-    line-height: 92%;
-    margin-top: 0;
+    margin-top: 0.8rem;
   }
 
   .category-title-to {
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .image-container {
+    margin: 0 auto;
+  }
+
+  .amount-input-container {
+    margin-top: 1rem;
+  }
+
+  .amount-input {
+    margin-right: 0;
+  }
+
+  .arrows-image {
+    margin-top: 2rem;
   }
 }
