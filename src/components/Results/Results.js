@@ -7,7 +7,7 @@ const Results = ({ data, isDisabled, isLoading }) => {
   return (
     <div className='convert-results-container'>
       {result ? (
-        <div>
+        <div className='rate-result-container'>
           <p className='rate-result'>
             {formatResult(result)} ${query.to}
           </p>

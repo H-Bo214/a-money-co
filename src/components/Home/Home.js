@@ -16,8 +16,8 @@ const Home = () => {
   const handleConversion = async (e) => {
     const { from, to, amount } = formData
     e.preventDefault()
-    if (from === to) return setError('Select a different currency.')
-    if (to === '') return setError('Select a currency to covert to.')
+    if (from === to) return setError('Select a currency')
+    if (to === '') return setError('Select a currency to covert to')
     if (!amount || amount < 0)
       return setError('Enter an amount greater than 0.')
     setIsLoading(true)

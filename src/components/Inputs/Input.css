@@ -80,6 +80,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width: 500px) {
+  .select-img-container {
+    margin-top: 1rem;
+  }
+
   .image-container {
     margin: 0 auto;
   }
@@ -93,6 +97,6 @@ input::-webkit-inner-spin-button {
   }
 
   .arrows-image {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
 }

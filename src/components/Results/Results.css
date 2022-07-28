@@ -60,15 +60,22 @@ button.convert-button:not([disabled]):hover {
 
 @media only screen and (max-width: 615px) {
   .convert-results-container {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .convert-button {
     padding: 0.8rem;
+    /* border: 2px solid lime; */
+    font-size: 1.1rem;
   }
 
+  .rate-result-container {
+    /* border: 2px solid lime; */
+    /* margin-right: 1rem; */
+  }
   .rate-result {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
+    line-height: 1.1rem;
   }
 
   .rate {
@@ -76,6 +83,6 @@ button.convert-button:not([disabled]):hover {
   }
 
   small {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }

@@ -3,7 +3,7 @@ const formatTime = (timestamp) => {
 }
 
 const formatResult = (result) => {
-  return result.toFixed(5)
+  return result.toFixed(3)
 }
 
 export { formatTime, formatResult }

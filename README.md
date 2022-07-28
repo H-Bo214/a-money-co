@@ -20,9 +20,7 @@
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/JavaScript%20-grey?style=flat-square&logo=javascript)]() [![Status](https://img.shields.io/badge/HTML%20-grey?style=flat-square&logo=html5)]() [![Status](https://img.shields.io/badge/CSS%20-grey?style=flat-square&logo=css3&logoColor=1572B6)]() [![Status](https://img.shields.io/badge/React%20-grey?style=flat-square&logo=react)](https://reactjs.org/)
-
-[![Status](https://img.shields.io/badge/Figma%20-grey?style=flat-square&logo=figma)](https://www.figma.com/) [![Status](https://img.shields.io/badge/Emotion%20-grey?style=flat-square)](https://emotion.sh/docs/introduction) [![Status](https://img.shields.io/badge/React%20Select-grey?style=flat-square)](https://react-select.com/home) [![Status](https://img.shields.io/badge/React%20Spinners-grey?style=flat-square)](https://www.npmjs.com/package/react-spinners)
+[![Status](https://img.shields.io/badge/JavaScript%20-grey?style=flat-square&logo=javascript)]() [![Status](https://img.shields.io/badge/HTML%20-grey?style=flat-square&logo=html5)]() [![Status](https://img.shields.io/badge/CSS%20-grey?style=flat-square&logo=css3&logoColor=1572B6)]() [![Status](https://img.shields.io/badge/React%20-grey?style=flat-square&logo=react)](https://reactjs.org/)[![Status](https://img.shields.io/badge/Figma%20-grey?style=flat-square&logo=figma)](https://www.figma.com/) [![Status](https://img.shields.io/badge/Emotion%20-grey?style=flat-square)](https://emotion.sh/docs/introduction) [![Status](https://img.shields.io/badge/React%20Select-grey?style=flat-square)](https://react-select.com/home) [![Status](https://img.shields.io/badge/React%20Spinners-grey?style=flat-square)](https://www.npmjs.com/package/react-spinners)
 
 </div>
 
@@ -32,7 +30,7 @@
 <div>
 
 <!-- Add your project demo gif here -->
-  <h4 align="right">Open location in google maps</h4>
+  <h4 align="right">Desktop Demo</h4>
   <img align="right" src="./migrate-sr-gif-3.gif" alt="migrate application gif" height="720"/>
   <img src="./migrate-sr-gif-2.gif" alt="migrate application gif 2" height="720"/>
   <h4>Search by city name</h4>

@@ -50,6 +50,7 @@ const Input = ({
             onFocus={handleFocus}
             noOptionsMessage={() => 'No results found'}
             placeholder='Select a currency'
+            className='select'
           />
         </div>
         <div className='image-container'>
@@ -71,6 +72,7 @@ const Input = ({
             onFocus={handleFocus}
             noOptionsMessage={() => 'No results found'}
             placeholder='Select a currency'
+            className='select'
           />
         </div>
       </div>
