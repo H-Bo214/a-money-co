@@ -34,9 +34,9 @@
   <div align="center">
       <img width=800px src="./cc-desktop.gif" alt="currency converter application gif"/>
   </div>
-
-  <div>
-    <img align="center" src="./cc-dt-select.gif" alt="currency converter application gif 2"/>
+  <br/>
+  <div align="center">
+    <img width=800px src="./cc-dt-select.gif" alt="currency converter application gif 2"/>
   </div>
 
   <br/>
