@@ -30,7 +30,8 @@
 <div>
 
 <!-- Add your project demo gif here -->
-  <h4>Desktop Demo</h4>
+  <h4 alighn="center">Desktop Demo</h4>
+  <br/>
   <div align="center">
       <img width=800px src="./cc-desktop.gif" alt="currency converter application gif"/>
   </div>
