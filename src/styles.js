@@ -4,11 +4,15 @@ export const customStyles = {
   menu: (provided) => ({
     ...provided,
     border: '2px solid #19EF88',
+    borderRadius: '8px',
   }),
   option: (provided) => ({
     ...provided,
+    fontSize: '1.125rem',
+    lineHeight: '25px',
     borderBottom: '2px solid #463182',
-    padding: '12px 12px',
+    padding: '18px 12px',
+    color: '#181A3C',
     '&:hover': {
       backgroundColor: 'rgba(25, 239, 136, .30)',
     },

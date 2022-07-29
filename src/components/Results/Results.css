@@ -65,14 +65,9 @@ button.convert-button:not([disabled]):hover {
 
   .convert-button {
     padding: 0.8rem;
-    /* border: 2px solid lime; */
     font-size: 1.1rem;
   }
 
-  .rate-result-container {
-    /* border: 2px solid lime; */
-    /* margin-right: 1rem; */
-  }
   .rate-result {
     font-size: 1.4rem;
     line-height: 1.1rem;

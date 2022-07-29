@@ -1,4 +1,4 @@
-import { formatTime, formatResult } from '../../helpers'
+import { formatTime, formatCurrencyResult } from '../../helpers'
 import { RingLoader } from 'react-spinners'
 import '../Results/Results.css'
 
@@ -9,10 +9,10 @@ const Results = ({ data, isDisabled, isLoading }) => {
       {result ? (
         <div className='rate-result-container'>
           <p className='rate-result'>
-            {formatResult(result)} ${query.to}
+            {formatCurrencyResult(result)} ${query.to}
           </p>
           <p className='rate'>
-            1 {`${query.from} = ${formatResult(info.rate)} ${query.to}`}
+            1 {`${query.from} = ${formatCurrencyResult(info.rate)} ${query.to}`}
           </p>
           <small>
             Mid-market exchange rate at {formatTime(info.timestamp)}

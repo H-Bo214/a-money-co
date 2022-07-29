@@ -4,7 +4,7 @@ import Inputs from '../Inputs/Inputs'
 import Title from '../Title/Title'
 import Results from '../Results/Results'
 import { useState } from 'react'
-import { fetchConversion, fakeAPICall } from '../../apiCalls'
+import { fetchConversion } from '../../apiCalls'
 
 const Home = () => {
   const [formData, setFormData] = useState({ from: '', to: '', amount: '' })
@@ -16,15 +16,13 @@ const Home = () => {
   const handleConversion = async (e) => {
     const { from, to, amount } = formData
     e.preventDefault()
-    if (from === to) return setError('Select a currency')
+    if (from === to) return setError('Select two different currencies')
     if (to === '') return setError('Select a currency to covert to')
     if (!amount || amount < 0)
       return setError('Enter an amount greater than 0.')
     setIsLoading(true)
-    // const data = await fetchConversion(formData)
-    // setData(data)
-    const fakeData = fakeAPICall()
-    setData(fakeData)
+    const data = await fetchConversion(formData)
+    setData(data)
     setIsDisabled(true)
     setIsLoading(false)
   }
