@@ -30,7 +30,7 @@
 <div>
 
 <!-- Add your project demo gif here -->
-  <h4 alighn="center">Desktop Demo</h4>
+  <h4 align="center">Desktop Demo</h4>
   <br/>
   <div align="center">
       <img width=800px src="./cc-desktop.gif" alt="currency converter application gif"/>
@@ -42,8 +42,8 @@
 
   <br/>
   <hr />
-  <h4>Mobile version showing error handling</h4>
-  <img src="./cc-mobile-errors.gif" alt="currency converter application gif mobile 1" height="720"/>
+  <h4 align="center">Mobile version showing error handling</h4>
+  <img align="right" src="./cc-mobile-errors.gif" alt="currency converter application gif mobile 1" height="720"/>
   <img src="./cc-mobile-errors2.gif" alt="currency converter application gif mobile 2" height="720"/>
 </div>
 
