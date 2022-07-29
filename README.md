@@ -31,7 +31,9 @@
 
 <!-- Add your project demo gif here -->
   <h4>Desktop Demo</h4>
-  <img align="center" width=800px src="./cc-desktop.gif" alt="currency converter application gif"/>
+  <div align="center">
+      <img width=800px src="./cc-desktop.gif" alt="currency converter application gif"/>
+  </div>
 
   <div>
     <img align="center" src="./cc-dt-select.gif" alt="currency converter application gif 2"/>
