@@ -5,11 +5,17 @@
 }
 
 html {
-  background: url('../src/assets/images/background\ image.jpeg') no-repeat
-    center center fixed;
+  background: url('../src/assets/images/background-image.jpeg') no-repeat center
+    center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+body {
+  min-width: 380px;
+  margin: 0 auto;
 }

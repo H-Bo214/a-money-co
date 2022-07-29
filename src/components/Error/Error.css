@@ -1,0 +1,13 @@
+.error-message-container {
+  min-height: 25px;
+}
+
+.error-message {
+  font-size: 1rem;
+  color: #e10000;
+  margin: 0 0 0 0.5rem;
+}
+
+.alert-icon {
+  color: white;
+}

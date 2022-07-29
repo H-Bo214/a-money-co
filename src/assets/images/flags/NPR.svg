@@ -1,0 +1,20 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="23" height="23" fill="white"/>
+<path d="M8.201 11.765L14.9104 22.5H0.5V0.981885L14.2749 11H8.625H7.72288L8.201 11.765Z" fill="#C51918" stroke="#4857A1"/>
+<mask id="mask0_2754_3381" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="23">
+<path d="M8.201 11.765L14.9104 22.5H0.5V0.981885L14.2749 11H8.625H7.72288L8.201 11.765Z" fill="white" stroke="white"/>
+</mask>
+<g mask="url(#mask0_2754_3381)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.19005 19.1763L3.30946 20.7001L3.26881 18.7772L1.88463 19.3199L2.69945 17.7323L1.3404 17.0866L2.69945 16.4408L1.88463 14.8533L3.26881 15.3959L3.30946 13.473L4.19005 14.9968L5.07063 13.473L5.11128 15.3959L6.49546 14.8533L5.68064 16.4408L7.03969 17.0866L5.68064 17.7323L6.49546 19.3199L5.11128 18.7772L5.07063 20.7001L4.19005 19.1763Z" fill="#F7FCFF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.16876 7.79952L3.70888 8.59533L3.68765 7.59109L2.96478 7.8745L3.39031 7.04542L2.68055 6.70817L3.39031 6.37092L2.96478 5.54184L3.68765 5.82525L3.70888 4.82101L4.16876 5.61682L4.62864 4.82101L4.64987 5.82525L5.37275 5.54184L4.94722 6.37092L5.65697 6.70817L4.94722 7.04542L5.37275 7.8745L4.64987 7.59109L4.62864 8.59533L4.16876 7.79952Z" fill="#F7FCFF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.07246 7.56493C5.67262 7.57345 6.52578 6.36309 6.52578 6.36309C6.69456 7.7442 5.39145 8.66309 4.08806 8.66309C2.78466 8.66309 1.99551 7.41053 1.50934 6.36309C1.50934 6.36309 2.47229 7.55641 4.07246 7.56493Z" fill="#F9FAFA"/>
+</g>
+<rect width="23" height="23" rx="11.5" fill="url(#paint0_linear_2754_3381)" style="mix-blend-mode:overlay"/>
+<rect x="0.5" y="0.5" width="22" height="22" rx="11" stroke="black" stroke-opacity="0.1"/>
+<defs>
+<linearGradient id="paint0_linear_2754_3381" x1="11.5" y1="0" x2="11.5" y2="23" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.7"/>
+<stop offset="1" stop-opacity="0.3"/>
+</linearGradient>
+</defs>
+</svg>

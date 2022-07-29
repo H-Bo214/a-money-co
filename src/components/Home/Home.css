@@ -1,35 +1,43 @@
-main {
-  /* border: 2px solid lime; */
+.main-container {
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
-  margin-top: 8.3rem;
+  margin: 3rem auto 0 auto;
   align-items: center;
-}
-
-.title-container {
-  /* border: 2px solid red; */
-  text-align: center;
-}
-
-.form {
-  /* border: 2px solid blue; */
 }
 
 .arrows {
   width: 5rem;
 }
 
-h1 {
-  color: #19ef88;
-  line-height: 64%;
-  font-size: 4.3rem;
-  font-weight: 800;
+.inputs-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.description {
-  color: #fff;
-  font-weight: 300;
-  line-height: 100%;
-  font-size: 1.75rem;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 8px;
+  background-color: rgba(20, 5, 50, 0.6);
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-container {
+    margin: 1.5rem auto 0 auto;
+  }
+  .form-container {
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-container {
+    margin: 0.5rem auto 0 auto;
+  }
 }

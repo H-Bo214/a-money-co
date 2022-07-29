@@ -1,0 +1,42 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2441_4045" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+<rect width="23" height="23" fill="white"/>
+</mask>
+<g mask="url(#mask0_2441_4045)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V23H23V0H0Z" fill="#2E42A5"/>
+<mask id="mask1_2441_4045" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V23H23V0H0Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_2441_4045)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.5V23H23V11.5H0Z" fill="#E31D1C"/>
+<rect x="4.3125" y="3.8335" width="14.375" height="15.3333" fill="white"/>
+<mask id="mask2_2441_4045" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="3" width="15" height="17">
+<rect x="4.3125" y="3.8335" width="14.375" height="15.3333" fill="white"/>
+</mask>
+<g mask="url(#mask2_2441_4045)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3125 16.0713C4.3125 16.0713 7.76291 14.0326 11.5 14.1571C15.2371 14.2815 18.6875 16.5499 18.6875 16.5499V19.1669H4.3125L4.3125 16.0713Z" fill="#279E19"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.18742 6.78471C8.17157 6.81299 8.17028 6.84517 8.18362 6.87472C8.3365 7.21346 9.36934 9.34958 11.1042 9.34958C12.7959 9.34958 14.0269 7.31826 14.2608 6.90323C14.2856 6.85912 14.2767 6.80594 14.2385 6.77263C14.048 6.60623 13.4442 6.1333 12.7366 6.1333C11.8779 6.1333 11.1042 6.62233 11.1042 6.62233C11.1042 6.62233 9.95309 6.1333 9.21995 6.1333C8.60045 6.1333 8.2738 6.63056 8.18742 6.78471Z" fill="#026A16"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3485 14.1969L10.0604 13.1106C9.30772 13.575 8.9314 14.4944 8.9314 15.8691L9.92895 18.0527H11.9664H12.9716L13.6917 15.8691C13.6917 15.8691 13.9721 13.0454 12.9716 12.5898L11.3485 14.1969Z" fill="#C51918"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.53025 11.1475C8.53025 11.1475 6.58582 12.0475 6.58582 15.3678L9.1793 16.0517C9.1793 16.0517 9.14892 14.1494 9.92415 13.2571L8.53025 11.1475Z" fill="#0A328C"/>
+<path d="M7.57275 10.0889L7.88231 9.67188L11.5001 14.4196L11.1905 14.8367L7.57275 10.0889Z" fill="#FFD018"/>
+<path d="M6.44177 11.2039L6.69616 10.7202L11.3484 15.4406L11.0941 15.9242L6.44177 11.2039Z" fill="#FFD018"/>
+<path d="M5.66821 13.0542L5.86811 12.5234L11.1536 16.3637L10.9537 16.8944L5.66821 13.0542Z" fill="#FFD018"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.59924 15.3418L10.0787 15.9497L9.88286 16.7084H9.33122L9.70692 17.1371L10.5541 17.4469V16.7084H11.2961V18.2774H9.70692L9.0974 17.1371C9.0974 17.1371 8.58548 17.9256 8.08586 17.9256C7.58625 17.9256 7.09369 17.6695 7.09369 16.8096C7.09369 15.9497 7.09369 16.2113 7.09369 16.2113L6.59924 15.9497V15.3418Z" fill="#FECA00"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.0993 10.9683C14.0993 10.9683 16.3794 12.0472 16.3794 15.3675L13.7629 16.0505C13.7629 16.0505 13.6439 13.5954 12.8364 12.7031L14.0993 10.9683Z" fill="#0A328C"/>
+<path d="M15.3513 10.0889L15.0289 9.67188L11.131 14.0351L11.4535 14.4521L15.3513 10.0889Z" fill="#FFD018"/>
+<path d="M16.5294 11.2039L16.2644 10.7202L11.4183 15.4406V16.3254L16.5294 11.2039Z" fill="#FFD018"/>
+<path d="M17.3339 13.0551L17.1283 12.5225L11.2945 16.3017L11.5 16.8343L17.3339 13.0551Z" fill="#FFD018"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.3655 15.3418L12.741 15.9497L12.945 16.7084H13.5197L13.1283 17.1371L12.2458 17.4469V16.7084H11.4729V18.2774H13.1283L13.7632 17.1371C13.7632 17.1371 14.2965 17.9256 14.8169 17.9256C15.3373 17.9256 15.8504 17.6695 15.8504 16.8096C15.8504 15.9497 15.8504 16.2113 15.8504 16.2113L16.3655 15.9497V15.3418Z" fill="#FECA00"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.0566 8.96777C11.0566 8.96777 10.8217 11.2748 10.8217 12.2137C10.8217 13.1526 11.0566 18.1435 11.0566 18.1435H11.6607C11.6607 18.1435 11.6607 12.9975 11.6607 12.2137C11.6607 11.4299 11.3062 8.96777 11.3062 8.96777H11.0566Z" fill="#FECA00"/>
+</g>
+</g>
+</g>
+<rect width="23" height="23" rx="11.5" fill="url(#paint0_linear_2441_4045)" style="mix-blend-mode:overlay"/>
+<rect x="0.5" y="0.5" width="22" height="22" rx="11" stroke="black" stroke-opacity="0.1"/>
+<defs>
+<linearGradient id="paint0_linear_2441_4045" x1="11.5" y1="0" x2="11.5" y2="23" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.7"/>
+<stop offset="1" stop-opacity="0.3"/>
+</linearGradient>
+</defs>
+</svg>

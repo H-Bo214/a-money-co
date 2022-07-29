@@ -1,0 +1,58 @@
+.title-container {
+  text-align: center;
+}
+
+.app-title {
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 97%;
+  text-align: center;
+  color: #19ef88;
+}
+
+.description {
+  color: #fff;
+  line-height: 100%;
+  font-size: 1.75rem;
+  margin-bottom: 3.25rem;
+}
+
+.error-message-container {
+  min-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 745px) {
+  header {
+    padding-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  .app-title {
+    line-height: 87%;
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .app-title {
+    line-height: 87%;
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    width: 70%;
+    margin: 1rem auto 0 auto;
+  }
+}

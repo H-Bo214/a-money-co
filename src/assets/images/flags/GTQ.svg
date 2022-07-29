@@ -1,0 +1,23 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2441_3965" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+<rect width="23" height="23" fill="white"/>
+</mask>
+<g mask="url(#mask0_2441_3965)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8125 0H23V23H15.8125V0Z" fill="#58A5FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H8.625V23H0V0Z" fill="#58A5FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.1875 0H15.8125V23H7.1875V0Z" fill="white"/>
+<path d="M9.17453 16.3273L8.65234 15.6688L14.1777 7.87939L14.6999 8.5379L9.17453 16.3273Z" fill="#C6C6C6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.33286 7.76758C9.33286 7.76758 7.56409 9.19087 7.56409 12.7589C7.56409 16.327 11.8703 16.8097 11.8703 16.8097C11.8703 16.8097 9.29334 14.7139 8.95606 13.2136C8.61878 11.7132 9.33286 7.76758 9.33286 7.76758Z" fill="#5AB92D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.6953 7.76758C13.6953 7.76758 15.4641 9.19087 15.4641 12.7589C15.4641 16.327 11.1579 16.8097 11.1579 16.8097C11.1579 16.8097 13.866 14.7389 14.2455 12.7589C14.6251 10.7789 13.6953 7.76758 13.6953 7.76758Z" fill="#5AB92D"/>
+<path d="M10.6431 7.28271L11.3589 7.36934C11.3353 7.71514 11.477 8.0671 11.8273 8.44485C12.9548 9.66073 13.5608 11.1774 13.0859 12.9009C12.7413 14.1516 12.2732 15.2076 11.681 16.0652L11.1522 15.4161C11.6781 14.6545 12.098 13.7072 12.4112 12.5704C12.7523 11.3326 12.2906 10.1771 11.3753 9.18998C10.8538 8.62757 10.5952 7.98527 10.6431 7.28271Z" fill="#5AB92D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1875 9.3999L10.9417 12.2425H10.3873C10.3873 12.2425 10.1875 13.1395 10.5646 13.1395C10.9417 13.1395 12.8849 13.1395 12.8849 13.1395C12.8849 13.1395 13.1375 12.9146 13.0112 12.2425C12.8849 11.5703 12.2466 9.71488 12.2466 9.71488C12.2466 9.71488 12.5194 9.40695 12.5194 9.17869C12.5194 8.95043 12.2466 8.92529 12.2466 8.92529H10.5252C10.3054 8.97594 10.1875 9.3999 10.1875 9.3999Z" fill="#EFE298"/>
+</g>
+<rect width="23" height="23" rx="11.5" fill="url(#paint0_linear_2441_3965)" style="mix-blend-mode:overlay"/>
+<rect x="0.5" y="0.5" width="22" height="22" rx="11" stroke="black" stroke-opacity="0.1"/>
+<defs>
+<linearGradient id="paint0_linear_2441_3965" x1="11.5" y1="0" x2="11.5" y2="23" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.7"/>
+<stop offset="1" stop-opacity="0.3"/>
+</linearGradient>
+</defs>
+</svg>
