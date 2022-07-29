@@ -9,7 +9,7 @@
   <br />
   <a href="[INSERT LINK HERE]">Currency Converter</a> 
   </p>
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b5683752-bdc7-46f4-8525-68528da3245a/deploy-status)](https://app.netlify.com/sites/a-money-co-currency-converter/deploys)
 <div align="center">
 
 [![Status](https://img.shields.io/badge/Currency%20Converter-Live-blueviolet)]([INSERT LINK HERE])
