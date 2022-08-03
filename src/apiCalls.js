@@ -1,12 +1,10 @@
-const apiKey = process.env.REACT_APP_FIXER_API_KEY
-
 export async function fetchConversion(formData) {
   const { from, to, amount } = formData
   const root = 'https://fixer-fixer-currency-v1.p.rapidapi.com'
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': apiKey,
+      'X-RapidAPI-Key': process.env.REACT_APP_FIXER,
       'X-RapidAPI-Host': 'fixer-fixer-currency-v1.p.rapidapi.com',
     },
   }
