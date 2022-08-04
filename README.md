@@ -12,7 +12,7 @@
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/Currency%20Converter-Live-blueviolet)]([INSERT LINK HERE])
+[![Status](https://img.shields.io/badge/Currency%20Converter-Live-blueviolet)](https://a-money-co-currency-converter.netlify.app/)
 
 </div>
 
