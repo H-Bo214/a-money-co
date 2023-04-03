@@ -7,7 +7,6 @@
     <!-- Add your tagline or very short intro of your project -->
     Find exchange rates for 164 world currencies.
   <br />
-  <a href="https://a-money-co-currency-converter.netlify.app/">Currency Converter</a> 
   </p>
 
 <div align="center">
