@@ -12,7 +12,7 @@
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/Currency%20Converter-Live-blueviolet)](https://a-money-co-currency-converter.netlify.app/)
+<h1>Site no longer active, API no longer hosted</h1>
 
 </div>
 
